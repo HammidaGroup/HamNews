@@ -36,28 +36,32 @@ box-shadow: 0 22px 20px white;
     display: flex;
     justify-content: center;
     background: #efeff2e6;
-    /* height: 100vh; */
+    height: 100vh;
 
     width: 100%;
     padding: 5px;
   flex-wrap: wrap;
   gap: 10px;
+  overflow-y: scroll;
 }
+
 .menu-div{
     height: 100vh;
     width: 199px;
     position: absolute;
+    left: 0;
     background: #dcd2d2;
     /* display: none; */
 }
 
 .card-div{
     display: flex;
+    box-shadow: 0 3px 3px;
     flex-direction: column;
    height: 300px;
    overflow: hidden;
    width: 300px;
-   background: #7b6f8c; 
+   background: #e7e5e9; 
    border-radius: 10px;
 
 }
@@ -80,6 +84,15 @@ box-shadow: 0 22px 20px white;
     background: rgba(12, 134, 183, 0.589);
     padding: 5px;
     border-radius: 50px;
-    margin: 0 auto;
-    box-shadow: 0 3px 3px ;
+        margin: 10px;
+    box-shadow: 0 3px 3px;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    background: #0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
