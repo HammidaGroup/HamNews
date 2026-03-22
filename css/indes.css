@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+}
+.header{
+    height: 50px;
+    width: 100%;
+    background: rgba(247, 247, 253, 0.819);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+box-shadow: 0 22px 20px white;
+}
+.left-nav{
+    /* background: #000; */
+    position: relative;
+}
+.hamNewslogo{
+    height: 70px;
+    /* width: 50px; */
+   /* position: absolute; */
+   
+}
+.middle-nav{
+    /* background: #a58e8e; */
+    /* width: 200px; */
+    font-family: 'Courier New', Courier, monospace;
+}
+.menu-btn{
+    height: 50px;
+ cursor: pointer;
+}
+.main{
+    background: #efeff2e6;
+    height: 100vh;
+    width: 100%;
+
+}
+.menu-div{
+    height: 100vh;
+    width: 199px;
+    position: absolute;
+    background: #dcd2d2;
+    /* display: none; */
+}
