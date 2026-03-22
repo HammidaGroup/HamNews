@@ -74,6 +74,7 @@ box-shadow: 0 22px 20px white;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .card-div button{
     background: rgba(12, 134, 183, 0.589);
