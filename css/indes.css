@@ -71,7 +71,7 @@ margin: 10px;
     text-decoration-line: none;
 }
 .card-grid{
-    background: #000;
+    background: #000 !important;
     width: 47vw;
     display: flex;
     padding: 10px;
@@ -140,12 +140,12 @@ footer{
 
 @media (max-width:993px) {
     .card-grid{
-        width: 100vw;
+        width: 100vw !important;
     }
     .card-div h2{
-        font-size: smaller;
+        font-size: smaller !important;
     }
     .card-div p{
-        font-size: smaller;
+        font-size: smaller !important;
     }
 }
