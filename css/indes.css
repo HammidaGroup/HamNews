@@ -73,11 +73,12 @@ margin: 10px;
     display: flex;
     box-shadow: 0 3px 3px;
     flex-direction: column;
-   height: 350px;
+   min-height: 350px;
    overflow: hidden;
    width: 300px;
    background: #e7e5e9; 
    border-radius: 10px;
+   /* align-items: center; */
 
 }
 .img-div{
@@ -95,12 +96,27 @@ margin: 10px;
     justify-content: center;
     flex-direction: column;
 }
+.date-title-div p{
+    margin: 10px;
+}
+.date-title-div h2{
+    margin-left: 10px;
+}
+.btnDiv{
+    /* background: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .card-div button{
     background: rgba(12, 134, 183, 0.589);
-    padding: 5px;
+    padding: 5px 20px;
     border-radius: 50px;
         margin: 10px;
     box-shadow: 0 3px 3px;
+   
+   
 }
 
 footer{
