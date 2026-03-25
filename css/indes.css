@@ -35,7 +35,7 @@ box-shadow: 0 22px 20px white;
 .main{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     background: #efeff2e6;
     height: 100vh;
 
@@ -70,64 +70,33 @@ margin: 10px;
     color: #000;
     text-decoration-line: none;
 }
-.card-grid{
-    /* background: #000 !important; */
-    width: 47vw;
+
+.card-box{
+    /* background: gray; */
+    width: 91%;
+    padding: 20px;
     display: flex;
-    padding: 10px;
-    gap: 10px;
+    flex-direction: column;
+    gap: 5px;
 }
 .card-div{
     display: flex;
-    box-shadow: 0 3px 3px;
-    flex-direction: column;
-   min-height: 350px;
-   overflow: hidden;
-   width: 50%;
-
-   background: #e7e5e9; 
-   border-radius: 10px;
-   /* align-items: center; */
-
+    /* padding: 10px; */
+   border: 2px solid black;
 }
-.img-div{
-    height: 150px;
-}
-
-.img-div img{
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-}
-.card-div .date-title-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.date-title-div p{
-    margin: 10px;
-}
-.date-title-div h2{
-    margin-left: 10px;
-}
-.btnDiv{
-    /* background: #000; */
+.imgDiv{
+    /* background: red; */
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-.card-div button{
-    background: rgba(12, 134, 183, 0.589);
-    padding: 5px 20px;
-    border-radius: 50px;
-        margin: 10px;
-    box-shadow: 0 3px 3px;
-   
-   
-}
+.imgDiv img{
+height: 100px;
+border-radius: 10px;
+margin-right: 10px;
+margin: 10px;
 
+}
 footer{
     height: 50px;
     width: 100%;
@@ -137,15 +106,3 @@ footer{
     justify-content: center;
 }
 
-
-@media (max-width:993px) {
-    .card-grid{
-        width: 100vw !important;
-    }
-    .card-div h2{
-        font-size: smaller !important;
-    }
-    .card-div p{
-        font-size: smaller !important;
-    }
-}
