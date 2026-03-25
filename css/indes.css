@@ -70,13 +70,21 @@ margin: 10px;
     color: #000;
     text-decoration-line: none;
 }
+.card-grid{
+    /* background: #000; */
+    width: 47vw;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
 .card-div{
     display: flex;
     box-shadow: 0 3px 3px;
     flex-direction: column;
    min-height: 350px;
    overflow: hidden;
-   width: 300px;
+   width: 50%;
+
    background: #e7e5e9; 
    border-radius: 10px;
    /* align-items: center; */
@@ -127,4 +135,17 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+@media (max-width:993px) {
+    .card-grid{
+        width: 100vw;
+    }
+    .card-div h2{
+        font-size: smaller;
+    }
+    .card-div p{
+        font-size: smaller;
+    }
 }
