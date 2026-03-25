@@ -19,7 +19,7 @@ main{
     flex-direction: column;
     overflow-y: scroll;
     align-items: center;
-    padding: 10px;
+    padding: 23px 13px ;
 }
 
 .art-img{
