@@ -35,6 +35,7 @@ box-shadow: 0 22px 20px white;
 .main{
     display: flex;
     justify-content: center;
+    align-items: center;
     background: #efeff2e6;
     height: 100vh;
 
