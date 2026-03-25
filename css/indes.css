@@ -71,7 +71,7 @@ margin: 10px;
     text-decoration-line: none;
 }
 .card-grid{
-    /* background: #000; */
+    background: #000;
     width: 47vw;
     display: flex;
     padding: 10px;
