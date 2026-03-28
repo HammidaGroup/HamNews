@@ -23,3 +23,19 @@ overflow-y: scroll;
 .about-main-div li{
     list-style: none;
 }
+
+/* yha se privacy ka code hai */
+
+.privacy-main-div{
+    background: white;
+    padding: 10px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.privacy-main-div .main-heading{
+  text-align: center;
+}
+.privacy-main-div h2{
+    margin: 10px 0px;
+
+}
