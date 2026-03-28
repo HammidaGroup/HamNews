@@ -1,3 +1,24 @@
-.content-div{
-    padding: 40px;
+.about-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    background:  rgb(146, 146, 165);
+}
+.about-main-div{
+    background: gray;
+    width: 90%;
+    padding: 10px;
+height: 100vh;
+border-radius: 10px;
+
+}
+.about-main-div .main-heading{
+    text-align: center;
+}
+.about-main-div h2{
+    margin: 10px 0px;
+}
+.about-main-div li{
+    list-style: none;
 }
