@@ -201,7 +201,11 @@ body{
   color: #121212;
   line-height: 1.4;
 }
-
+.title-div .art-date{
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+}
 /* FOOTER */
 footer{
   height: 50px;
