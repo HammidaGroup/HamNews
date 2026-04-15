@@ -6,14 +6,19 @@ if(count==0)menu.style.display="none"
 
 menuBtn.addEventListener("click",()=>{
     // console.log("clicked");
-    if (count==0) {
-        menu.style.display=""
-        // ++count
-        count++
-    }else{
-        menu.style.display="none"
-    count--
-    }
+    // if (count==0) {
+    //     menu.style.display=""
+    //     // ++count
+    //     count++
+    // }else{
+    //     menu.style.display="none"
+    // count--
+    // }
+    if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
 
 })
 

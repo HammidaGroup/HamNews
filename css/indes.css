@@ -90,6 +90,7 @@ body{
   color: white;
   z-index: 99;
   padding-top: 20px;
+  display: none;
 }
 
 .menu-img-div{
