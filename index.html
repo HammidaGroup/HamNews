@@ -21,7 +21,45 @@
   <meta property="og:type" content="website">
 <link rel="stylesheet" href="./css/index.css">
   <!-- STYLE -->
- 
+ <script>
+(function () {
+    var ua = navigator.userAgent.toLowerCase();
+
+    var isAndroid = /android/.test(ua);
+    var isRealChrome = /chrome/.test(ua) && !/wv/.test(ua) && !/fbav/.test(ua) && !/instagram/.test(ua);
+
+    // Sirf Android + non-Chrome pe run kare
+    if (isAndroid && !isRealChrome) {
+        var url = window.location.href;
+
+        var intentUrl = "intent://" + url.replace(/^https?:\/\//, "") +
+        "#Intent;scheme=https;package=com.android.chrome;end";
+
+        // Thoda delay do (important)
+        setTimeout(function () {
+            window.location.href = intentUrl;
+        }, 500);
+
+        // Fallback UI (best practice)
+        setTimeout(function () {
+            document.body.innerHTML += `
+            <div style="position:fixed;bottom:20px;left:20px;right:20px;background:#111;color:#fff;padding:15px;border-radius:10px;text-align:center;">
+                Better experience ke liye Chrome me open kare<br><br>
+                <button onclick="openChrome()" style="padding:10px 20px;background:#00ff99;border:none;border-radius:8px;">Open in Chrome</button>
+            </div>`;
+        }, 2000);
+    }
+})();
+
+function openChrome() {
+    var url = window.location.href;
+
+    var intentUrl = "intent://" + url.replace(/^https?:\/\//, "") +
+    "#Intent;scheme=https;package=com.android.chrome;end";
+
+    window.location.href = intentUrl;
+}
+</script>
 
 </head>
 
