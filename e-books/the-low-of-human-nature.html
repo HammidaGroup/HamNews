@@ -38,6 +38,29 @@
   }
   </script>
 <script src="https://quge5.com/88/tag.min.js" data-zone="230501" async data-cfasync="false"></script>
+<script>
+(function () {
+    var ua = navigator.userAgent.toLowerCase();
+    var isAndroid = ua.indexOf("android") > -1;
+    var isChrome = ua.indexOf("chrome") > -1;
+
+    // Agar Android hai aur Chrome nahi hai
+    if (isAndroid && !isChrome) {
+        var url = window.location.href;
+
+        var intentUrl = "intent://" + url.replace(/^https?:\/\//, "") +
+        "#Intent;scheme=https;package=com.android.chrome;end";
+
+        // Try open in Chrome
+        window.location.href = intentUrl;
+
+        // Fallback
+        setTimeout(function () {
+            alert("Better experience ke liye Chrome me open kare");
+        }, 2000);
+    }
+})();
+</script>
   <!-- CSS -->
  <link rel="stylesheet" href="../css/e-book.css">
 
