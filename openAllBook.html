@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Open in Chrome Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+      background: #111;
+      color: #fff;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background: #00ff99;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Open in Chrome</h1>
+
+<button onclick="openInChrome()">Open Website</button>
+
+<script>
+function openInChrome() {
+    let url = "https://hamnews.xyz";
+
+    // Android Chrome intent (best way)
+    let intentUrl = "intent://" + url.replace(/^https?:\/\//, "") + "#Intent;scheme=https;package=com.android.chrome;end";
+
+    // Try opening in Chrome
+    window.location.href = intentUrl;
+
+    // Fallback (agar Chrome open na ho)
+    setTimeout(() => {
+        window.location.href = url;
+    }, 2000);
+}
+</script>
+
+</body>
+</html>
